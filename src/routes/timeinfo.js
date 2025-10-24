@@ -18,7 +18,7 @@ router.get("/timeinfo", async (req, res) => {
         if(!location) return res.status(404).json({error: "City not found"});
 
         const { countryCode, countryName, timeZone, utcOffset } = location;
-        console.log("location", location);
+
         // 2. Get Holidays (with cache)
         const year = new Date().getFullYear();
         const holidays = await getHolidays(countryCode, year);
