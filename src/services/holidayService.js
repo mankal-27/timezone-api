@@ -24,7 +24,6 @@ export async function getHolidays(countryCode,year){
         //Step3: Store in cache
         // Save to cache with TTL (24 hours default)
         setCache(key, holidays);
-        console.log("Fetched fresh Data: ", key);
 
         return holidays;
     }catch (error) {
