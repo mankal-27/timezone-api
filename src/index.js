@@ -11,6 +11,7 @@ import healthRoutes from "./routes/health.js";
 import { apiAuth } from "./middleware/apiAuth.js";
 import { apiLimiter} from "./middleware/rateLimiter.js";
 
+app.set("trust proxy", 1); // trust first proxy (Render, Railway, etc.)
 app.use("/api", healthRoutes)
 app.use("/api", apiLimiter,apiAuth, timeInfoRoutes);
 app.use((req, res, next) => {
