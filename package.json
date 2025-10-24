@@ -1,0 +1,29 @@
+{
+  "name": "timezone-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mankal-27/timezone-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/mankal-27/timezone-api/issues"
+  },
+  "homepage": "https://github.com/mankal-27/timezone-api#readme",
+  "dependencies": {
+    "axios": "^1.12.2",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.1.0",
+    "luxon": "^3.7.2",
+    "nodemon": "^3.1.10"
+  }
+}
